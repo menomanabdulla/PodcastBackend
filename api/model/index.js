@@ -18,8 +18,7 @@ const PodcastSchema = new Schema({
         required: true
     },
     podcastCreateDate:{
-        type: Date,
-        required: true
+        type: String
     },
     podcastListenerNumber: {
         type: Number,
