@@ -18,9 +18,9 @@ mongoose.connect(
   .then(res => console.log(`DB Connected`))
   .catch(err=>console.log(err))
 
+  
 
 const podcastRouter = require('./api/route')
-
 
 //middlewire
 app.use(morgan('dev'))
