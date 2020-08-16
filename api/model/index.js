@@ -2,25 +2,30 @@ const mongoose = require('mongoose')
 const Schema = mongoose.Schema
 
 const PodcastSchema = new Schema({
-    URL:{
+    podcastType:{
         type: String,
         trim: true,
         required: true
     },
-    title:{
+    podcastURL:{
         type: String,
         trim: true,
         required: true
     },
-    createDate:{
+    podcastTitle:{
+        type: String,
+        trim: true,
+        required: true
+    },
+    podcastCreateDate:{
         type: Date,
         required: true
     },
-    listenerNumber: {
+    podcastListenerNumber: {
         type: Number,
         required: true
     },
-    thumb:{
+    podcastThumb:{
         type: String,
         trim: true,
         required: true
